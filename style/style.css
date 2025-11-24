@@ -461,3 +461,61 @@ body {
 .footer-copy {
     color: rgba(255, 255, 255, 0.8);
 }
+
+
+/* ===== detail produk ===== */
+.zoom-container {
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: zoom-in;
+}
+
+/* Smooth animation */
+.zoom-image {
+    transition: transform 0.4s ease;
+}
+
+/* Zoom on hover */
+.zoom-container:hover .zoom-image {
+    transform: scale(1.15);
+}
+
+/* Extra responsive tuning */
+@media(max-width: 768px) {
+    .zoom-container {
+        padding: 8px;
+    }
+    .zoom-image {
+        border-radius: 8px;
+    }
+}
+
+/* Breadcrumb Premium Blue */
+.custom-breadcrumb {
+    background: transparent !important;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.custom-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: "›";            /* Arrow style breadcrumb */
+    color: #1d4ed8;          /* Premium blue */
+    font-weight: 600;
+}
+
+.custom-breadcrumb a {
+    color: var(--color-secondary);          /* Deep blue */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color .2s ease;
+}
+
+.custom-breadcrumb a:hover {
+    color: #3b82f6;
+}
+
+.custom-breadcrumb .breadcrumb-item.active {
+    color: #64748b;         
+    font-weight: 600;
+}
