@@ -519,3 +519,59 @@ body {
     color: #64748b;         
     font-weight: 600;
 }
+
+/* ===== sidebar katalog ===== */
+/* SIDEBAR BOX */
+.filter-box {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.08);
+}
+
+/* Header tombol */
+.filter-btn {
+    width: 100%;
+    background: #f8f9fa;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 12px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+/* Filter Section */
+.filter-item {
+    margin-bottom: 20px;
+}
+
+/* Quick Filter Buttons */
+.quick-filter {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #eaeaea;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    transition: .2s;
+}
+
+.quick-filter:hover {
+    background: #f0f0ff;
+    border-color: #5a45ff;
+}
+
+/* Clear All */
+.clear-btn {
+    width: 100%;
+    background: #d9534f;
+    color: white;
+    padding: 14px;
+    border: none;
+    font-size: 18px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
